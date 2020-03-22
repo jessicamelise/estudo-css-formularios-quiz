@@ -46,6 +46,8 @@ function limparTela() {
     respostaTresMat.value = "";
     mostrarRespIng.style.display = "none";
     mostrarRespMat.style.display = "none";
+    mostrarRespMat.innerHTML = "";
+    mostrarRespIng.innerHTML = "";
 }
 
 function submeterNome() {
@@ -64,8 +66,11 @@ function enviarRespUmMat() {
     if (respostaUmMat.value === "a") {
         mostrarRespMat.innerHTML += "Você acertou a Questão 1!!! <br>";
         mostrarRespMat.style.display = "none";
-    } else {
+    } else if (respostaUmMat.value === "b" || respostaUmMat.value === "a") {
         mostrarRespMat.innerHTML += "Você errou a Questão 1!!! <br>";
+        mostrarRespMat.style.display = "none";
+    } else {
+        mostrarRespMat.innerHTML += "Caracter digitado não válido na Questão 1!!! <br>";
         mostrarRespMat.style.display = "none";
     }
     primeiroMat.style.display = "none";
@@ -81,8 +86,11 @@ function enviarRespUmIng() {
     if (respostaUmIng.value === "b") {
         mostrarRespIng.innerHTML += "Você acertou a Questão 1!!! <br>";
         mostrarRespIng.style.display = "none";
-    } else {
+    } else if (respostaUmIng.value === "a" || respostaUmIng.value === "c") {
         mostrarRespIng.innerHTML += "Você errou a Questão 1!!! <br>";
+        mostrarRespIng.style.display = "none";
+    } else {
+        mostrarRespIng.innerHTML += "Caracter digitado não válido na Questão 1!!! <br>";
         mostrarRespIng.style.display = "none";
     }
     primeiroIng.style.display = "none";
@@ -105,8 +113,11 @@ function enviarRespDoisMat() {
     if (respostaDoisMat.value === "b") {
         mostrarRespMat.innerHTML += "Você acertou a Questão 2!!! <br>";
         mostrarRespMat.style.display = "none";
-    } else {
+    } else if (respostaDoisMat.value === "a" || respostaDoisMat.value === "c") {
         mostrarRespMat.innerHTML += "Você errou a Questão 2!!! <br>";
+        mostrarRespMat.style.display = "none";
+    } else {
+        mostrarRespMat.innerHTML += "Caracter digitado não válido na Questão 2!!! <br>";
         mostrarRespMat.style.display = "none";
     }
     segundoMat.style.display = "none";
@@ -117,8 +128,11 @@ function enviarRespDoisIng() {
     if (respostaDoisIng.value === "c") {
         mostrarRespIng.innerHTML += "Você acertou a Questão 2!!! <br>";
         mostrarRespIng.style.display = "none";
-    } else {
+    } else if (respostaDoisIng.value === "a" || respostaDoisIng.value === "b") {
         mostrarRespIng.innerHTML += "Você errou a Questão 2!!! <br>";
+        mostrarRespIng.style.display = "none";
+    } else {
+        mostrarRespIng.innerHTML += "Caracter digitado não válido na Questão 2!!! <br>";
         mostrarRespIng.style.display = "none";
     }
     segundoIng.style.display = "none";
@@ -139,10 +153,13 @@ function segundoPerguntaSeguinteMat() {
 
 function enviarRespTresIng() {
     if (respostaTresIng.value === "a") {
-        mostrarRespIng.innerHTML += "Você acertou a Questão 3!!!";
+        mostrarRespIng.innerHTML += "Você acertou a Questão 3!!! <br>";
+        mostrarRespIng.style.display = "none";
+    } else if (respostaTresIng.value === "b" || respostaTresIng.value === "c") {
+        mostrarRespIng.innerHTML += "Você errou a Questão 3!!! <br>";
         mostrarRespIng.style.display = "none";
     } else {
-        mostrarRespIng.innerHTML += "Você errou a Questão 3!!!";
+        mostrarRespIng.innerHTML += "Caracter digitado não válido na Questão 3!!! <br>";
         mostrarRespIng.style.display = "none";
     }
     terceiroIng.style.display = "none";
@@ -152,11 +169,14 @@ function enviarRespTresIng() {
 
 function enviarRespTresMat() {
     if (respostaTresMat.value === "c") {
-        mostrarRespMat.innerHTML += "Você acertou a Questão 3!!!";
+        mostrarRespMat.innerHTML += "Você acertou a Questão 3!!! <br>";
+        mostrarRespMat.style.display = "none";
+    } else if (respostaTresMat.value === "a" || respostaTresMat.value === "b") {
+        mostrarRespMat.innerHTML += "Você errou a Questão 3!!! <br>";
         mostrarRespMat.style.display = "none";
     } else {
-        mostrarRespMat.innerHTML += "Você errou a Questão 3!!!";
-        mostrarRespMat.style.display = "none";
+        mostrarRespMat.innerHTML += "Caracter digitado não válido na Questão 3!!! <br>";
+        mostrarRespMat.style.display = "none"; 
     }
     terceiroMat.style.display = "none";
     mostrarRespMat.style.display = "block";

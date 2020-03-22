@@ -15,8 +15,7 @@ body header {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     padding: 50px;
 
@@ -33,4 +32,12 @@ button {
 
 button:hover {
     background-color: rgb(207, 213, 240);
+}
+
+.tamanhoImput {
+    width: 70px;
+}
+
+.proximaPergunta {
+    margin-top: 160px;
 }

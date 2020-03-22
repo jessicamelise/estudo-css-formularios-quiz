@@ -31,7 +31,7 @@
             <p>a. Vermelho</p>
             <p>b. Amarelo</p>
             <p>c. Verde</p>
-            <input type="text" id="respostaUmIng">
+            <input type="text" class="tamanhoImput" id="respostaUmIng">
             <button onclick="enviarRespUmIng()">Enviar Resposta</button>
         </div>
 
@@ -40,16 +40,16 @@
             <p>a. 4</p>
             <p>b. 22</p>
             <p>c. 0</p>
-            <input type="text" id="respostaUmMat">
+            <input type="text" class="tamanhoImput" id="respostaUmMat">
             <button onclick="enviarRespUmMat()">Enviar Resposta</button>
         </div>
 
         <div id="primeiroProximaPerguntaIng">
-            <button onclick="primeiroPerguntaSeguinteIng()">Próxima Pergunta</button>
+            <button class="proximaPergunta" onclick="primeiroPerguntaSeguinteIng()">Próxima Pergunta</button>
         </div>
 
         <div id="primeiroProximaPerguntaMat">
-            <button onclick="primeiroPerguntaSeguinteMat()">Próxima Pergunta</button>
+            <button class="proximaPergunta" onclick="primeiroPerguntaSeguinteMat()">Próxima Pergunta</button>
         </div>
 
         <div id="segundoIng">
@@ -57,7 +57,7 @@
             <p>a. Grape</p>
             <p>b. Apple</p>
             <p>c. Orange</p>
-            <input type="text" id="respostaDoisIng">
+            <input type="text" class="tamanhoImput" id="respostaDoisIng">
             <button onclick="enviarRespDoisIng()">Enviar Resposta</button>
         </div>
 
@@ -66,16 +66,16 @@
             <p>a. 30</p>
             <p>b. 5</p>
             <p>c. 20</p>
-            <input type="text" id="respostaDoisMat">
+            <input type="text" class="tamanhoImput" id="respostaDoisMat">
             <button onclick="enviarRespDoisMat()">Enviar Resposta</button>
         </div>
 
         <div id="segundoProximaPerguntaIng">
-            <button onclick="segundoPerguntaSeguinteIng()">Próxima Pergunta</button>
+            <button class="proximaPergunta" onclick="segundoPerguntaSeguinteIng()">Próxima Pergunta</button>
         </div>
 
         <div id="segundoProximaPerguntaMat">
-            <button onclick="segundoPerguntaSeguinteMat()">Próxima Pergunta</button>
+            <button class="proximaPergunta" onclick="segundoPerguntaSeguinteMat()">Próxima Pergunta</button>
         </div>
 
         <div id="terceiroIng">
@@ -83,7 +83,7 @@
             <p>a. Yellow/ Blue/ Red</p>
             <p>b. Oranje/ Purple/ Green</p>
             <p>c. Yellow/ Green/ Red</p>
-            <input type="text" id="respostaTresIng">
+            <input type="text" class="tamanhoImput" id="respostaTresIng">
             <button onclick="enviarRespTresIng()">Enviar Resposta</button>
         </div>
 
@@ -96,7 +96,7 @@
             <p>a. -1</p>
             <p>b. 13</p>
             <p>c. 42</p>
-            <input type="text" id="respostaTresMat">
+            <input type="text" class="tamanhoImput" id="respostaTresMat">
             <button onclick="enviarRespTresMat()">Enviar Resposta</button>
         </div>
 
@@ -104,7 +104,7 @@
             <p id="mostrarRespMat"></p>
         </div>
 
-        <div id="botaoReset">
+        <div class="respostasAlinhadas" id="botaoReset">
             <button onclick="resetGame()">Novo Jogo</button>
         </div>
 
