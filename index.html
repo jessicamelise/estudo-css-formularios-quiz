@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quick Quiz</h1>
+        <p id="saudacaoNome"> </p>
+        <p id="caixaPreencherNome">Seu primeiro nome
+            <input type="text" id="preencherNome" required>
+            <button type="submit" onclick="submeterNome()">Enviar</button>
+        </p>
+        <p>
+            <div id="assuntoQuiz">
+                <button type="submit" onclick="provaMat()">Prova de Matemática</button>
+                <button type="submit" onclick="provaIng()">Prova de Inglês</button>
+            </div>
+        </p>
+    </header>
+    <main>
+
+        <div id="primeiroIng">
+            <p>1 - Qual a tradução de "Yellow"? (Digite uma opção abaixo)</p>
+            <p>a. Vermelho</p>
+            <p>b. Amarelo</p>
+            <p>c. Verde</p>
+            <input type="text" id="respostaUmIng">
+            <button onclick="enviarRespUmIng()">Enviar Resposta</button>
+        </div>
+
+        <div id="primeiroMat">
+            <p>1 - Quanto é 2 + 2? (Digite uma opção abaixo)</p>
+            <p>a. 4</p>
+            <p>b. 22</p>
+            <p>c. 0</p>
+            <input type="text" id="respostaUmMat">
+            <button onclick="enviarRespUmMat()">Enviar Resposta</button>
+        </div>
+
+        <div id="primeiroProximaPerguntaIng">
+            <button onclick="primeiroPerguntaSeguinteIng()">Próxima Pergunta</button>
+        </div>
+
+        <div id="primeiroProximaPerguntaMat">
+            <button onclick="primeiroPerguntaSeguinteMat()">Próxima Pergunta</button>
+        </div>
+
+        <div id="segundoIng">
+            <p>2 - Como escreve "Laranja" em inglês? (Digite uma opção abaixo)</p>
+            <p>a. Grape</p>
+            <p>b. Apple</p>
+            <p>c. Orange</p>
+            <input type="text" id="respostaDoisIng">
+            <button onclick="enviarRespDoisIng()">Enviar Resposta</button>
+        </div>
+
+        <div id="segundoMat">
+            <p>2 - Quanto é 25 / 5? (Digite uma opção abaixo)</p>
+            <p>a. 30</p>
+            <p>b. 5</p>
+            <p>c. 20</p>
+            <input type="text" id="respostaDoisMat">
+            <button onclick="enviarRespDoisMat()">Enviar Resposta</button>
+        </div>
+
+        <div id="segundoProximaPerguntaIng">
+            <button onclick="segundoPerguntaSeguinteIng()">Próxima Pergunta</button>
+        </div>
+
+        <div id="segundoProximaPerguntaMat">
+            <button onclick="segundoPerguntaSeguinteMat()">Próxima Pergunta</button>
+        </div>
+
+        <div id="terceiroIng">
+            <p>3 - Quais são as cores primárias em inglês? (Digite uma opção abaixo)</p>
+            <p>a. Yellow/ Blue/ Red</p>
+            <p>b. Oranje/ Purple/ Green</p>
+            <p>c. Yellow/ Green/ Red</p>
+            <input type="text" id="respostaTresIng">
+            <button onclick="enviarRespTresIng()">Enviar Resposta</button>
+        </div>
+
+        <div>
+            <p id="mostrarRespIng"></p>
+        </div>
+
+        <div id="terceiroMat">
+            <p>3 - Quanto é 6 x 7? (Digite uma opção abaixo)</p>
+            <p>a. -1</p>
+            <p>b. 13</p>
+            <p>c. 42</p>
+            <input type="text" id="respostaTresMat">
+            <button onclick="enviarRespTresMat()">Enviar Resposta</button>
+        </div>
+
+        <div>
+            <p id="mostrarRespMat"></p>
+        </div>
+
+        <div id="botaoReset">
+            <button onclick="resetGame()">Novo Jogo</button>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
